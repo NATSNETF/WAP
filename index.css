@@ -1,0 +1,28 @@
+body{
+    background-color: salmon;
+    background-position: center top;
+    background-image: url("coffeTable\ \(2\).jpg");
+    background-attachment: scroll;
+}
+
+h2{
+    
+    color:purple
+}
+h2{
+    
+    color:brown;
+}
+ul{
+    background-position: center top;
+    color:blueviolet;
+    
+   
+}
+footer{
+  
+    background-repeat: repeat;
+}
+p{
+    color: blueviolet;
+}
