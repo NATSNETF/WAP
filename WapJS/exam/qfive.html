@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="figure">FIGURE 1</h2>
+      <fieldset>
+       <h1>Registeration Form</h1>
+       <span id="fullname"></span>
+       <label id="labelfirstname" >First Name</label>
+       <input type="firstname" id="firstname">
+       <br>  
+       <label id="labelsecondname"> Second Name</label>
+       <input type="secondname" id="secondname">
+       <br>
+       <span id="genderresult"></span>
+       <label id="genderlabel" >Gender</label>
+       <input type="radio" name="gender" value="Male" id="male"/> <label id="malelabel">Male</label> 
+       <input type="radio" name="gender" value="Female" id="female"/><label id="femalelabel">Female</label>
+        <br>
+        <label id="courseslist">Courses List</label>
+        <span id="courseselected"></span>
+       <select name="courses" id="courses" size="3" multiple>
+           <option >CS305</option>
+           <option>CS315</option>
+           <option>CS415</option>
+       </select>
+       <br>
+       <input type="button"value=Submit id="button" onclick="registeration()"/>
+       <span id="fullname"></span>
+    </fieldset>
+
+   
+ 
+
+   <script>
+       function registeration(){
+      let firstname=document.getElementById("firstname").value;
+      let secondname=document.getElementById("secondname").value;
+
+      document.getElementById("fullname").innerHTML="Full Name"+" " + firstname+" " +secondname;
+       document.getElementById("labelfirstname").remove();
+       document.getElementById("firstname").remove();
+       document.getElementById("labelsecondname").remove();
+       document.getElementById("secondname").remove();
+
+       var ele = document.getElementsByName('gender');
+              
+            for(i = 0; i < ele.length; i++) {
+                if(ele[i].checked)
+                document.getElementById("genderresult").innerHTML
+                        = "Gender: "+ele[i].value;
+            }
+
+             document.getElementById("genderlabel").remove();
+             document.getElementById("male").remove();
+             document.getElementById("female").remove();
+             document.getElementById("malelabel").remove();
+             document.getElementById("femalelabel").remove();
+
+             document.getElementById("button").value="Done";
+
+             var ele = document.getElementsByName('courses');
+              
+            for(i = 0; i < ele.length; i++) {
+                if(ele[i].ch)
+                document.getElementById("courseselected").innerHTML
+                        = ele[i].value;
+            }
+
+       }
+
+
+   </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label[for='fruts']{
+            color: red;
+        }
+        li, label{
+           color: red;
+        }
+    </style>
+</head>
+<body>
+    <label for="flower">flower</label>
+    <ol>
+        <li>rose</li>
+        <li>red flower</li>
+    </ol>
+    <div>
+        <label>fruts</label>
+        <lo>
+            <li>mango</li>
+            <li>appel</li>
+        </lo>
+    </div>
+    <br>
+    <p>click the button below to display the gidden content from the template element.</p>
+    <button onclick="showHidden()">Show hidden content</button>
+
+    <template>
+        <h2>coffeetable</h2>
+        <img src="maxresdefault.jpg"width="200"height="200">
+    </template>
+    <script>
+        document.querySelector("label[for='fruts']").style.color="red"
+        document.querySelector("ol li").style.textDocuration="underline"
+        document.querySelector("div ol li").style.textDocuration="underline"
+
+        function showHidden(){
+            let temp=document.getElementsByTagName("template")[0];
+            let clon=temp.content.cloneNode(true);
+            document.body.append(clon);
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\oopjs"
+		},
+		{
+			"path": "..\\..\\jess"
+		},
+		{
+			"path": "..\\..\\javascript"
+		},
+		{
+			"path": "..\\..\\test"
+		},
+		{
+			"path": "..\\..\\Telegram Desktop"
+		},
+		{
+			"path": "..\\..\\WapJS"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "WapJS"
+	}
+}

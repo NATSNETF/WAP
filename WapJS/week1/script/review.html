@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h2 class="example">A heading with class="example"</h2>
+<p id="text">this is my area</p>
+<p id="text">this is not your palce</p>
+<p>find your own place</p>
+<button onclick="myfunction()">click</button>
+
+<p>An unordered list</p>
+<ul>
+    <li>Coffee</li>
+    <li>tea</li>
+    <li>milk</li>
+    <li>water</li>
+</ul>
+<p>
+    click the button to display the innerHTML of the second li elemnt (index 1).
+</p>
+<button onclick="myfun()">try it</button>
+<p id="demo"></p>
+
+<p>click the button to change the text of this paragrapg</p>
+<p>this is also a paragraph</p>
+<button onclick="changes()">change Me</button>
+
+<script>
+    function myfunction(){
+        document.querySelector("#text").style.backgroundColor="blue";
+        //document.querySelector(.example).style.backgroundcolor="red" //h2
+        // document.querySelector("p").style.backgroundColor="blue"; still 1st line
+    }
+function myfun(){
+    let x=document.getElementsByTagName("p");
+    document.getElementById("demo").innerHTML=x[3].innerHTML;//tea
+    //document.getElementById("demo").innerHTML=x.length;//4
+}
+function changes(){
+    document.getElementsByTagname("P")[0].innerHTML="hello world";
+}
+
+
+</script>
+</body>
+</html>

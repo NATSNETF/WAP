@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <style>
+lable{
+    margin:30px;
+    
+}
+div{
+margin: 30px;
+border:5px solid blue;
+padding: 60px;
+width: 300px;
+ box-sizing: border-box;
+
+}
+        </style>
+    </head>
+    <body>
+        <div>
+            <lable>name</lable>
+            <input type ="text "value="naxa"/>
+            <lable>id</lable>
+            <input type="text "value="2345">
+         
+        </div>
+       next element
+
+       <hr>
+       <h2>MR POUL STORY</h2>
+       <p>hello MR.poul how are you</p>
+       <p>how are you</p>
+       <P id="demo"></P>
+      
+       
+      
+       <script>
+           //get elementbyId is a method, while innerHTML is a property
+           //most common way to use an html elemnt is to use the "ID" of the element
+           //innerHTML is useful for getting or replacing the content of HTML elements
+           const element= document.getElementsByTagName("p");
+       
+           document.getElementById("demo").innerHTML="hello sir : " + element[1].innerHTML;
+       </script>
+       
+       <h2>element by tag name</h2>
+
+       <div id="main">
+           <p>try to find by her name</p>
+           <p>this is fun </p>
+           </div>
+
+           <p id="demo"></p>
+           <script>
+               const x = document.getElementById("main");
+               const y = x.getElementsByTagName("p")
+
+               document.getElementById("demo").innerHTML="i love to be around you " + y[0].innerHTML
+           </script>
+
+    </body>
+</html>
