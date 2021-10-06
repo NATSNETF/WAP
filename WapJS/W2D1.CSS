@@ -1,0 +1,26 @@
+body{
+    background-color: gray;
+}
+
+.one{
+  border: 2px solid;
+  border-color:white;
+  box-sizing:border-box;
+
+}
+
+
+
+.two{
+  border: 2px solid;
+  border-color: aliceblue;
+
+}
+.three{
+  border:2px solid;
+  box-sizing: border-box;
+}
+p{
+  text-align: left;
+}
+
